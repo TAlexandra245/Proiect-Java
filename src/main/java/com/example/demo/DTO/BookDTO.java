@@ -15,7 +15,9 @@ public class BookDTO {
     private int bookId;
     @NotNull
     private String bookName;
-
+    @NotNull
+    private double rentPrice;
+    @NotNull
     private boolean rented;
 
 }

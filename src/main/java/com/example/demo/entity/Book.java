@@ -1,5 +1,6 @@
 package com.example.demo.entity;
 
+import com.example.demo.Enums.BookAvailability;
 import com.sun.istack.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -30,9 +31,9 @@ public class Book {
     @NotNull
     private double rentPrice;
 
-    @Column(name = "rented")
+    @Column(name ="book_availability")
     @NotNull
-    private boolean rented;
+    BookAvailability bookAvailability;
 
     @Column(name = "local_date")
     @NotNull
